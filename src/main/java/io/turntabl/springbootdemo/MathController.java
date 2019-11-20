@@ -1,15 +1,21 @@
 package io.turntabl.springbootdemo;
 
+
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+@Api
 @RestController
 public class MathController {
+
     @Autowired
     private Math math;  // inject the Math class here for member access
 
+    @ApiOperation("add numbers")
     @RequestMapping("/add")
     public Number addOperation(
             @RequestParam(value = "value1") String value1,
