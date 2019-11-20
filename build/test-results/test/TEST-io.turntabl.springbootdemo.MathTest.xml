@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.turntabl.springbootdemo.MathTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-20T16:01:42" hostname="pkerbynn" time="0.067">
+  <properties/>
+  <testcase name="substract_positives()" classname="io.turntabl.springbootdemo.MathTest" time="0.067"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

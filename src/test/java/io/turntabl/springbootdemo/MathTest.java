@@ -30,4 +30,27 @@ class MathTest {
         assertEquals(0, math.add(0, 0));
     }
 
+    @Test
+    public void substract_positives(){
+        Math math = new Math();
+        assertEquals(5, math.subtract(10, 5));
+    }
+
+//    todo: test subtractions
+//  @Test
+//    public void substract_negatives(){
+//        Math math = new Math();
+//        assertEquals(-6, math.subtract(-1, -5));
+//    }
+//
+// @Test
+//    public void substract_negAndPostive(){
+//        Math math = new Math();
+//        assertEquals(-4, math.subtract(-1, 5));
+//    }
+
+
+
+
+
 }
