@@ -12,29 +12,29 @@ class MathTest {
         assertEquals(5, math.add(3, 2));
     }
 
-    @Test
-    public void add_negatives() {
-        Math math = new Math();
-        assertEquals(-8, math.add(-3, -5));
-    }
-
-    @Test
-    public void add_negAndNonNeg() {
-        Math math = new Math();
-        assertEquals(-998, math.add(-999, 1));
-    }
-
-    @Test
-    public void add_zeros() {
-        Math math = new Math();
-        assertEquals(0, math.add(0, 0));
-    }
-
-    @Test
-    public void substract_positives(){
-        Math math = new Math();
-        assertEquals(5, math.subtract(10, 5));
-    }
+//    @Test
+//    public void add_negatives() {
+//        Math math = new Math();
+//        assertEquals(-8, math.add(-3, -5));
+//    }
+//
+//    @Test
+//    public void add_negAndNonNeg() {
+//        Math math = new Math();
+//        assertEquals(-998, math.add(-999, 1));
+//    }
+//
+//    @Test
+//    public void add_zeros() {
+//        Math math = new Math();
+//        assertEquals(0, math.add(0, 0));
+//    }
+//
+//    @Test
+//    public void substract_positives(){
+//        Math math = new Math();
+//        assertEquals(5, math.subtract(10, 5));
+//    }
 
 //    todo: test subtractions
 //  @Test
