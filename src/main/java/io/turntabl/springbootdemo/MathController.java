@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MathController {
     @Autowired
-    private Math math;
+    private Math math;  // inject the Math class here for member access
 
     @RequestMapping("/add")
     public Number addOperation(
@@ -19,8 +19,7 @@ public class MathController {
         Integer nun2 = Integer.parseInt(value2);
 
 //        return new Number(num1 + nun2);
-        Number number = new Number(3);
-        return 
+        return new Number(this.math.add(num1, nun2));   // to make use of add()
     }
 
     @RequestMapping("/subtract")
@@ -31,8 +30,7 @@ public class MathController {
         Integer num1 = Integer.parseInt(value1);
         Integer num2 = Integer.parseInt(value2);
 
-
-
-        return new Number(num1 - num2);
+//        return new Number(num1 - num2);
+        return new Number(this.math.subtract(num1, num2));
     }
 }

@@ -11,7 +11,5 @@ public class SpringBootDemoApplication {
 		SpringApplication.run(SpringBootDemoApplication.class, args);
 	}
 
-	@Bean
-	Math math = new Math();
-	math.
+
 }
