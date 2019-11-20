@@ -9,13 +9,13 @@ public class MathController {
 
     @RequestMapping("/add")
     public Number addOperation(
-            @RequestParam(value = "value1", defaultValue = "0") String value,
-            @RequestParam(value = "value2", defaultValue = "0") String value2
+            @RequestParam(value = "value1") String value1,
+            @RequestParam(value = "value2") String value2
     ) {
-        Integer num1 = Integer.parseInt(value);
+        Integer num1 = Integer.parseInt(value1);
         Integer nun2 = Integer.parseInt(value2);
 
-        return new Number(num1 + num1);
+        return new Number(num1 + nun2);
     }
 
     @RequestMapping("/subtract")
